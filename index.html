@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KOKOA TALK</title>
+</head>
+<body>
+    <!--상태바-->
+    <div id="status-bar">
+        <!-- 상태바에 세로줄 3개(컬럼) : status-bar__column: 어떤위치의 컬럼인지 명시 -->
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <!-- Todo : Wifi Icon -->
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <!-- To do : Battery Icon -->
+            <i class="fas fa-battery-three-quarters"></i>
+            <!-- Todo : Lightning Icon -->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <!-- 각페이지마다 헤더들이 있으니, 해당 헤더들에 적절한 이름을 붙여주자:.welcome-header -->
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="welcome-header__text">If you have a Kakao Account, log in with your email or phone number.</p>
+    </header>
+    <form id="login-form">
+        <input type="text" placeholder="email or phone number">
+        <input type="password" placeholder="password">
+        <input type="submit" value="Log In">
+        <a href="#">Find KaKao Account or Password</a>
+    </form>
+    <!-- script는 body 안에 -->
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
